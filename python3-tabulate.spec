@@ -6,26 +6,25 @@
 Summary:	Pretty-print tabular data
 Summary(pl.UTF-8):	Ładne wypisywanie danych tabelarycznych
 Name:		python3-%{module}
-Version:	0.9.0
+Version:	0.10.0
 Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/tabulate/
 Source0:	https://files.pythonhosted.org/packages/source/t/tabulate/%{module}-%{version}.tar.gz
-# Source0-md5:	3b10bb64f8a06ca7549d3481b7e6c028
+# Source0-md5:	6ac315ec07ad9ead2452dff4806b7400
 URL:		https://github.com/astanin/python-tabulate
 BuildRequires:	python3-build
 BuildRequires:	python3-installer
-BuildRequires:	python3-modules >= 1:3.7
-BuildRequires:	python3-setuptools >= 1:61.2.0
+BuildRequires:	python3-modules >= 1:3.10
+BuildRequires:	python3-setuptools >= 1:77.0.3
 BuildRequires:	python3-setuptools_scm >= 3.4.3
-BuildRequires:	python3-wheel
 %if %{with tests}
 BuildRequires:	python3-pytest
 %endif
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 2.045
-Requires:	python3-modules >= 1:3.7
+Requires:	python3-modules >= 1:3.10
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
